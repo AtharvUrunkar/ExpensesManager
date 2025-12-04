@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LIGHT THEME -->
+    <style name="Theme.ExpensesManager" parent="Theme.Material3.Light.NoActionBar">
+        <!-- System bars -->
+        <item name="android:statusBarColor">@color/bg_light</item>
+        <item name="android:navigationBarColor">@color/bg_light</item>
+
+        <!-- Main colors -->
+        <item name="colorSurface">@color/bg_white</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="colorOnBackground">@color/text_dark</item>
+
+        <item name="colorPrimary">@color/text_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Rounded Corners -->
+        <item name="shapeAppearanceSmallComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedCorners</item>
+    </style>
+
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

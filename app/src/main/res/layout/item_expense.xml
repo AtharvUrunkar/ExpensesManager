@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:background="@color/bg_white"
+    android:elevation="3dp"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/imgType"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_expense"
+        android:background="@color/bg_light"
+        android:padding="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Nov 2025"
+            android:textColor="@color/text_light"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹200"
+        android:textColor="@color/accent_red"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

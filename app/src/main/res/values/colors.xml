@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- LIGHT MODE COLORS -->
+    <color name="bg_light">#F5F5F5</color>
+    <color name="bg_white">#FFFFFF</color>
+
+    <color name="text_dark">#000000</color>
+    <color name="text_light">#6E6E6E</color>
+    <color name="text_blue">#3F8DFF</color>
+
+    <!-- DARK MODE COLORS -->
+    <color name="bg_dark">#121212</color>
+
+    <!-- Accents -->
+    <color name="accent_blue_start">#3F8DFF</color>
+    <color name="accent_blue_end">#325BFF</color>
+
+    <color name="accent_yellow_start">#FFB941</color>
+    <color name="accent_yellow_end">#FF9800</color>
+
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <!-- Shadow -->
+    <color name="shadow_color">#66000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+</resources>

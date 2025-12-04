@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DARK THEME -->
+    <style name="Theme.ExpensesManager" parent="Theme.Material3.Dark.NoActionBar">
+
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+
+        <item name="colorSurface">@color/bg_dark</item>
+        <item name="colorOnSurface">@color/text_light</item>
+
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="colorOnBackground">@color/text_light</item>
+
+        <item name="colorPrimary">@color/text_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Rounded shapes -->
+        <item name="shapeAppearanceSmallComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedCorners</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedCorners</item>
+
+    </style>
+
+</resources>

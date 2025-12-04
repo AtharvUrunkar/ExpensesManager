@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="padding_screen">20dp</dimen>
+    <dimen name="card_radius">22dp</dimen>
+</resources>
