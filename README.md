@@ -5,7 +5,7 @@ Track your **income, expenses, wallet balance**, and stay organized with a beaut
 ---
 
 ## 📱 Screenshots
-(Add screenshots here after uploading)
+
 
 ---
 
