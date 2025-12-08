@@ -1,77 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     android:background="@color/bg_light">
 
+    <!-- Center the login box -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="24dp">
 
-        <!-- Title -->
-        <TextView
-            android:text="Welcome Back 👋"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_dark"
-            android:layout_marginBottom="20dp"/>
-
-        <!-- Email -->
-        <com.google.android.material.textfield.TextInputLayout
+        <!-- LOGIN CARD -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:background="@drawable/bg_card_rounded"
+            android:orientation="vertical"
+            android:padding="26dp"
+            android:elevation="8dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/text_dark"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in to your account to continue"
+                android:textSize="14sp"
+                android:textColor="@color/text_light"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textColor="@color/text_dark"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Email Input -->
+            <EditText
                 android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="john.doe@example.com"
+                android:padding="14dp"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_light"
+                android:layout_marginBottom="20dp"
                 android:inputType="textEmailAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Password -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:layout_marginTop="12dp">
+            <!-- Password Label + Forgot -->
+            <!-- Password Label + Forgot -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_dark"/>
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:textColor="@color/text_blue"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Password Input -->
+            <EditText
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="Enter your password"
+                android:padding="14dp"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_light"
+                android:layout_marginBottom="28dp"
                 android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Login Button -->
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/text_blue"
-            android:textColor="@color/bg_white"
-            android:text="Login"/>
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textColor="@color/bg_white"
+                android:backgroundTint="@color/text_blue"
+                android:layout_marginBottom="20dp"/>
 
-        <!-- Forgot Password -->
-        <TextView
-            android:id="@+id/txtForgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:textColor="@color/text_blue"
-            android:layout_marginTop="14dp"/>
+            <!-- Signup -->
+            <TextView
+                android:id="@+id/txtGoToSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have an account? Sign Up"
+                android:textColor="@color/text_blue"
+                android:layout_gravity="center" />
 
-        <!-- Signup Link -->
-        <TextView
-            android:id="@+id/txtGoToSignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Don’t have an account? Sign Up"
-            android:textColor="@color/text_blue"
-            android:layout_marginTop="18dp" />
-
+        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+
+</FrameLayout>
